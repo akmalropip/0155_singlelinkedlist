@@ -56,5 +56,9 @@ void addNode()
     previous->next = nodeBaru;
 }
 
+bool listEmpety()
+{
+    return (START == NULL);
+}
 
 }
