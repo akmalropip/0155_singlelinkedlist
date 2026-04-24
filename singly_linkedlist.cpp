@@ -61,7 +61,7 @@ bool listEmpety()
     return (START == NULL);
 }
 
-bool search(int nim, Node **previous, Node **current)
+bool Search(int nim, Node **previous, Node **current)
 {
     *previous = START;
     *current = START;
@@ -90,5 +90,23 @@ bool delNode(int nim)
     return true;
 }
 
-
+void traverse()
+{
+    if (listEmpety())
+    {
+        cout << "\nList Kosong\n";
+    }
+    else
+    {
+        cout << "\nData didalam list adalah:\n";
+        Node *currrentNode = START;
+        while (currentNode != NULL)
+        {
+            cout << currentNode->noMhs << endl;
+            currentNode = currentNode->next;
+        }
+        cout << endl;
+    }
 }
+};
+
